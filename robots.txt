@@ -1,9 +1,0 @@
-# DUSVAL — https://dusvalart.github.io
-# Etat actuel : site non annonce -> meta noindex sur toutes les pages.
-# Au jour du lancement : conserver "Allow: /", retirer les metas noindex,
-# puis soumettre le sitemap a Google Search Console.
-
-User-agent: *
-Allow: /
-
-Sitemap: https://dusvalart.github.io/sitemap.xml
