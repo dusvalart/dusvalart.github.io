@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registre — DUSVAL</title>
+  <meta name="description" content="Le registre public des œuvres DUSVAL — empreintes numériques horodatées, vérifiables par tous.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav id="nav">
+    <a class="wordmark" href="index.html">DUSVAL</a>
+    <ul>
+      <li><a href="oeuvres.html">Œuvres</a></li>
+      <li><a href="manifeste.html">Manifeste</a></li>
+      <li><a href="registre.html" class="actif">Registre</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main style="padding-top:170px;">
+    <section class="section reveal">
+      <span class="sur-titre">Registre</span>
+      <h2 class="titre-section">Ce qui est scellé ici ne peut plus être nié.</h2>
+      <p class="texte-courant">
+        Chaque œuvre reçoit une empreinte numérique : l'empreinte SHA-256 de ses photographies
+        et de son certificat. Cette empreinte est ensuite horodatée dans la blockchain Bitcoin
+        via <a href="https://opentimestamps.org" style="color:var(--ambre); text-decoration:none;">OpenTimestamps</a> —
+        gratuitement, sans compte, sans révéler qui que ce soit.
+      </p>
+      <p class="texte-courant" style="margin-top:26px;">
+        N'importe qui peut vérifier, à tout moment, qu'une pièce existait à la date indiquée —
+        même si l'artiste a disparu. L'œuvre ne dépend plus d'une parole : elle dépend d'une preuve.
+      </p>
+
+      <!-- Tableau du registre : lignes illustratives, à remplacer par les vraies entrées -->
+      <table class="table-registre">
+        <thead>
+          <tr>
+            <th>N° série</th>
+            <th>Œuvre</th>
+            <th>Empreinte SHA-256 (extrait)</th>
+            <th>Horodatage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DUS-001</td>
+            <td>Friction #01 — 01/01</td>
+            <td class="hash">00000000000000000000000000000000…</td>
+            <td><span class="attente">En attente d'inscription</span></td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td>—</td>
+            <td class="hash">…</td>
+            <td><span class="attente">À venir</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="note-galerie" style="margin-top:56px;">
+        Chaque ligne du registre renvoie au fichier de preuve téléchargeable (.ots).<br>
+        La vérification peut être faite hors ligne, pour toujours.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span>DUSVAL — Atelier des Pyrénées</span>
+    <span>MMXXVI</span>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
